@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Product Preferences</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hellojs/1.18.6/hello.all.min.js"></script>
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to User Product Preferences</h1>
+        <nav>
+            <ul>
+                <li><a href="/feed">Public Feed</a></li>li>
+                <li><a href="#" id="login">Login</a></li>
+                <li><a href="#" id="register">Register</a></li>li>
+            </ul>ul>
+        </nav>nav>
+    </header>header>
+    <main>
+        <section id="auth-section">
+            <h2>Authenticate with hello.dev</h2>h2>
+            <button id="auth-hello-dev">Login with hello.dev</button>button>
+        </section>section>
+        <section id="product-input-section" style="display:none;">
+            <h2>Add a Product</h2>h2>
+            <form id="product-form">
+                <label for="product-name">Product Name:</label>label>
+                <input type="text" id="product-name" name="product-name" required>
+                
+                <label for="product-category">Category:</label>label>
+                <select id="product-category" name="product-category" required>
+                    <!-- Categories will be populated dynamically -->
+                </select>
+                
+                <label for="product-link">Product Link:</label>
+                <input type="url" id="product-link" name="product-link" required>
+                
+                <label for="product-description">Description:</label>
+                <textarea id="product-description" name="product-description" required></textarea>textarea>
+                
+                <input type="submit" value="Submit">
+            </form>form>
+        </section>section>
+    </main>main>
+    <footer>
+        <p>&copy; 2023 User Product Preferences</p>
+    </footer>
+    <script>
+        // Initialize hello.js
+        hello.init({
+            hello_dev: 'YOUR_HELLO_DEV_CLIENT_ID'
+        }, {
+            redirect_uri: window.location.href,
+            oauth_proxy: 'YOUR_HELLO_DEV_OAUTH_PROXY'
+        });
+
+        // Event listeners for login and register
+        document.getElementById('login').addEventListener('click', function() {
+            // Implement login functionality
+        });
+
+        document.getElementById('register').addEventListener('click', function() {
+            // Implement register functionality
+        });
+
+        document.getElementById('auth-hello-dev').addEventListener('click', function() {
+            // Implement hello.dev authentication
+        });
+    </script>
+</body>body>
+</html>
+</label></a>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Feed | User Product Preferences</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hellojs/1.18.6/hello.all.min.js"></script>
+    <script src="../scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Public Feed</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#" id="login">Login</a></li>li>
+                <li><a href="#" id="register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="feed-section">
+            <h2>Discover Things People Like and Want</h2>
+            <div id="feed-content">
+                <!-- Feed content will be populated dynamically -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 User Product Preferences</p>p>
+    </footer>footer>
+    <script>
+        // Initialize hello.js
+        hello.init({
+            hello_dev: 'YOUR_HELLO_DEV_CLIENT_ID'
+        }, {
+            redirect_uri: window.location.href,
+            oauth_proxy: 'YOUR_HELLO_DEV_OAUTH_PROXY'
+        });
+
+        // Event listeners for login and register
+        document.getElementById('login').addEventListener('click', function() {
+            // Implement login functionality
+        });
+
+        document.getElementById('register').addEventListener('click', function() {
+            // Implement register functionality
+        });
+
+        // Function to fetch and display feed content
+        function fetchFeedContent() {
+            // Fetch feed content from the server and display it in #feed-content
+            console.log('Fetch and display feed content');
+        }
+
+        // Call fetchFeedContent on page load to populate the feed
+        document.addEventListener('DOMContentLoaded', fetchFeedContent);
+    </script>
+</body>body>
+</html>
+</a></h1></title>
